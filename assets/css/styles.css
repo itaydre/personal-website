@@ -1,0 +1,96 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.main {
+    padding: 100px;
+    width: 543px;
+}
+
+a {
+    color: #202124;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+
+.about-title {
+    display: flex;
+    margin: 8px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about {
+    margin-bottom: 40px;
+}
+
+.now {
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    margin: 60px;
+    
+}
+
+text {
+    color: #747780;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+}
+
+#title {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+
+#role {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+#country {
+    margin: 0;
+    font-weight: 300;
+    opacity: 0.4;
+}
+
+#about {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #747780;
+    margin: 8px 0;
+    line-height: 24px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 24px;
+        width: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+}
