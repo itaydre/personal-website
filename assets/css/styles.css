@@ -14,6 +14,10 @@ a {
 
 }
 
+p {
+    line-height: 24px;
+}
+
 .about-title {
     display: flex;
     margin: 8px 0;
@@ -27,7 +31,7 @@ a {
 }
 
 .now {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 
@@ -80,7 +84,7 @@ text {
 }
 
 .past {
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
 .contact {
