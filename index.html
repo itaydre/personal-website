@@ -1,0 +1,61 @@
+---
+title: The digital space of Itay Dreyfus
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+        html { font-family: 'Inter', sans-serif; }
+        @supports (font-variation-settings: normal) {
+        html { font-family: 'Inter var', sans-serif; }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="about-title">
+        <h1 id="title">Itay Dreyfus</h1>
+        <h2 id="role">Designer</h2>
+        <h3 id="country">Israel</h3>
+    </div>
+    
+        <h1 id="about">I'm an indie designer. I lead product design for early-stage startups, help to explore ideas, and launch meaningful products.</h1>
+        
+        <div class="past">
+            <text>/now</text>
+            <h2 id="p">I’m currently working directly with startup founders at the very beginning of their journeys.</h2>
+            <h2 id="p">I also write and publish about the intersection between products and brands at <a href="https://www.productidentity.co/" target="_blank">Product Identity</a>.</h2>
+            <h2 id="p">Feel free to reach out at <a href="mailto: itaydr@gmail.com">itaydr@gmail.com</a></h2>
+        </div>
+        
+        <div class="past">
+            <text>/past</text>
+            <h2 id="p">I led the design at <a href="https://www.bancor.network/" target="_blank">Bancor</a> (2016-2019) while exploring the crypto space.<br>I've also attempted to launch a few startups, and gone through a few mazes.</h2>
+        </div>
+    
+        <!--<div class="workspace">
+            <img src="assets/images/workspace.png" alt="workspace" width="auto" height="200">
+            <text>Current workspace</text>
+        </div><-->
+
+
+        <div class="past">
+        <text>/writing</text>
+
+            <ul>
+                {% for post in site.posts %}
+                <h2 id="p"><a href="{{ post.url }}"><text>{{ site.time | date: "%b %Y" }}</text> {{ post.title }}</a></h2>
+                {% endfor %}
+            </ul>
+            
+            </div>
+
+</div>
+</body>
+</html>
