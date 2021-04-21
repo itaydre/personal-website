@@ -1,5 +1,6 @@
 html, body {
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 .main {
@@ -18,6 +19,16 @@ p {
     line-height: 24px;
 }
 
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    color:#747780;
+    font-size: 12px;
+    padding-left: 16px;
+}
+
 .about-title {
     display: flex;
     margin: 8px 0;
@@ -28,8 +39,9 @@ p {
 
 .about {
     margin-bottom: 24px;
-    width: 546px;
-    margin-right: 96px;
+    width: 614px;
+    margin: auto;
+    margin-top: 182px;
 }
 
 .now {
@@ -87,18 +99,19 @@ text {
     font-weight: 400;
     color: #747780;
     margin: 8px 0;
-    line-height: 24px;
+    line-height: 1.8;
 }
 
 .now {
     margin-top: 24px;
-    width: 546px;
+    margin-bottom: 24px;
+    
     
 }
 
 .past {
     
-    width: 546px;
+    
 }
 
 .contact {
@@ -107,35 +120,87 @@ text {
 
 .about-wrapper {
     display: flex;
-    margin-top: 40px;
+    
     
 }
 
-@media only screen and (max-width: 600px) {
-    .main {
-        padding: 8px;
-        
-    }
+.navigation {
+    position: absolute;
+    padding: 24px;
+}
 
-    .about-wrapper {
-        flex-direction: column-reverse;
+.social {
+    font-size: 14px;
+    margin-top: 40px;
+
+}
+
+.social-links {
+    margin-top: 12px;
+    line-height: 1.8;
+}
+
+#sub-title {
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 12px;
+}
+
+#socialize {
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 12px;
+}
+
+#logo {
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        padding: 16px;
     }
 
     .about {
-        
+        margin-top: 24px;
+    }
+
+    .now, .past {
         width: 100%;
+        
     }
 
-    .now {
-        width: auto;
-    }
-
-    .past {
-        width: auto;
-    }
-
-    body {
+    .navigation {
+        display: flex;
         padding: 0;
+        position: inherit;
+        flex-direction: column;
     }
+
+    .social {
+        margin: 0;
+    }
+
+    a#social {
+        margin-right: 16px;
+    }
+
+    .social-links {
+        
+        margin: 0;
+    }
+
+    #socialize {
+        visibility: hidden;
+    }
+
+    img#logo {
+        height: 40px;
+        margin-right: 8px;
+    }
+
 
 }

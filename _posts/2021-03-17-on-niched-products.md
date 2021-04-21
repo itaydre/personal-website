@@ -1,6 +1,7 @@
 ---
 layout: post
 title: On niched product design
+permalink: test
 
 ---
 
