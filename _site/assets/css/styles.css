@@ -55,6 +55,19 @@ h1#about {
     
 }
 
+#workspace {
+    width: 500px;
+    height: auto;
+}
+
+.workspace {
+    margin-top: 40px;
+}
+
+#wfh {
+    color:#747780
+}
+
 .now {
     margin-top: 400px;
 }
@@ -169,6 +182,10 @@ text {
     .about {
         margin-top: 24px;
         margin-left: 0;
+    }
+
+    #workspace {
+        width: 100%;
     }
 
     .now, .past {
