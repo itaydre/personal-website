@@ -3,6 +3,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-image-optim
 
 gems:
   - jekyll-sitemap
