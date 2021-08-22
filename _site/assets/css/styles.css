@@ -23,6 +23,19 @@ p {
     line-height: 24px;
 }
 
+li {
+    margin-bottom: 8px;
+}
+
+.past {
+    margin-bottom: 24px;
+}
+
+#psb {
+    font-size: 14px;
+    color: #747780;
+}
+
 h1 {
     margin-top: 0;
     color: #202124;
@@ -53,6 +66,10 @@ h1#about {
     width: 614px;
     margin: auto;
     
+}
+
+.posts {
+    margin-top: 40px;
 }
 
 #workspace {
@@ -134,14 +151,22 @@ text {
 }
 
 .about-wrapper {
-    display: flex;
     
+    width: fit-content;
+    margin: 0 auto;
     
 }
 
 .navigation {
-    position: absolute;
+    position: fixed;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
     
+}
+
+::marker {
+    font-size: 8px;
 }
 
 .social {
@@ -179,9 +204,17 @@ text {
         padding: 16px;
     }
 
+    .about-wrapper {
+        
+    }
+
     .about {
         margin-top: 24px;
         margin-left: 0;
+        margin-bottom: 24px;
+        width: 100%;;
+        margin: auto;
+        
     }
 
     #workspace {
@@ -191,6 +224,7 @@ text {
     .now, .past {
         width: 100%;
         
+        
     }
 
     .navigation {
@@ -198,6 +232,9 @@ text {
         padding: 0;
         position: inherit;
         justify-content: space-between;
+        max-width: none;
+        flex-direction: row;
+        margin-bottom: 24px;
     }
 
     .social {

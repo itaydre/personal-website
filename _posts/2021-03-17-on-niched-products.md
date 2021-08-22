@@ -5,6 +5,9 @@ permalink: test
 
 ---
 
+# {{ page.title }}
+{{ page.date | date: "%b %d, %Y" }}
+
 I came to realize that the most inspiring, innovative, and authentic design on the internet today is coming from the most niched places – or how I call them, niched products.
 
 As a designer, I used to look at the big tech corporations of today (Spotify, Facebook, etc.) for getting inspiration. Everything from a feature to a UI component. As product design in the tech industry has become more standardized and boring, I find it crucial to avoid these same patterns.
