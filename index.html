@@ -16,66 +16,94 @@
         html { font-family: 'Inter var', sans-serif; }
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173468170-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173468170-1');
+</script>
+
 </head>
 <body>
 
-    {% include navigation.html %}
+    <div class="intro">
+        <a href="/" id="go-to-hp">
+        <div class="logo-about">
+            <img id="logo" src="assets/images/logo.png"><br>
+            <text id="go-to-hp">Itay Dreyfus</text><br>
+        </a>
+            <text id="logo-meta">Designer</text><br>
+            <text id="logo-meta">Tel Aviv, Israel</text>
+        </div>
+    
+        <div class="inner-about">
+        <text>I'm helping startups to explore ideas, build and launch meaningful products.</text>
+        </div>
+    </div>
 
-    <!--<div class="workspace">
+    <div class="now-then">
+        <div class="section-title">
+            <text id="sub-title">/now</text>
+            <ul>
+                <li><text id="psb">Rethinking wealth management at <a id="external-link" href="http://vyzer.co/" target="_blank">Vyzer</a>.</text></li>
+                <li><text id="psb">Occasionally working with early-stage startups.</text></li>
+            </ul>
+        </div>
+        
+        <div class="section-title">
+            <text id="sub-title">/past</text>
+            <ul>
+                <li><text id="psb">Led design and explored crypto at <a id="external-link" href="https://www.bancor.network/" target="_blank">Bancor</a>.</text></li>
+                <li><text id="psb">Attempted to launch a few startups. Gone through a few mazes.</text></li>
+            </ul>
+        </div>
+    </div>
+    
+
+       <!-- <div class="posts">
+                    <text id='sub-title'>/writing</text>
+                    {% for post in site.posts %}
+                    <div id="post-hp">
+                        <div class="header-hp">
+                            <a href="{{ post.url }}">
+                        <text id="post-title-hp">{{post.title}}</a></text><br>
+                        <text id="hp-post-description">{{post.description}}</text><br>
+                        <a>
+                    </div>
+                </div>
+                    {% endfor %}
+                </div>
+        </div>!-->
+    
+        <div class="social">
+            <text id='sub-title'>/socialize</text>
+            <div class="social-links">
+                <a id="external-link" href="https://twitter.com/itaydre" target="_blank">Twitter</a><br>
+                <a id="external-link" href="https://www.are.na/itay-dreyfus" target="_blank">Are.na</a><br>
+                <a id="external-link" href="https://futureland.tv/itay" target="_blank">Futureland</a><br>
+                <a id="external-link" href="https://www.linkedin.com/in/itay-dreyfus-64049316" target="_blank">Linkedin</a><br>
+            </div>
+        </div>
+    
+            
+            
+         
+            <!--<div class="workspace">
                 <img id="workspace" src="assets/images/wip-workspace.jpg" alt="workspace"><br>
                 <text id="wfh">WFH setup in progress</text>
             </div>!-->
 
-    <div class="about-wrapper">
-        <div class="about">
-            <h1 id="about">I'm a designer living in Tel Aviv.
-            <br>I'm helping startups to explore ideas, build and launch meaningful products.</br>
-            </h1>
-            <div class="now">
-                <text id='sub-title'>Now</text>
-                <ul>
-                    <li><text id="psb">Rethinking wealth management at <a href="http://vyzer.co/" target="_blank">Vyzer</a>.</text></li>
-                    <li><text id="psb">Occasionally working with early-stage startups.</a></text></li>
-                </ul>
-            </div>
-            <div class="past">
-                <text id='sub-title'>Past</text>
-                <ul>
-                    <li><text id="psb">Led design and explored crypto at <a href="https://www.bancor.network/" target="_blank">Bancor</a>.</text></li>
-                    <li><text id="psb">Attempted to launch a few startups. Gone through a few mazes.</text></li>
-                </ul>
-            </div>
-            <text id="psb">Feel free to reach out at <a href="mailto: itaydr@gmail.com">itaydr@gmail.com</a></text>
+            
         </div>
             
-            <!--<div class="posts">
-                Posts
-                <ul>
-                    {% for post in site.posts %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>!-->
+            
     </div>
 </div>
 
 
-     <!--<div class="workspace">
-            <img src="/assets/images/workspace.png" alt="workspace" width="374" height="auto">
-        </div>!-->
-    
-        <!--<div class="past">
-        <text>/writing</text>
-
-            <ul>
-                
-                <h2 id="p"><a href="/2021/03/17/on-niched-products.html"><text>Apr 2021</text> On niched product design</a></h2>
-                
-            </ul>
-            
-            </div>-->
 
 
 </body>

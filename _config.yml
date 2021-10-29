@@ -9,3 +9,6 @@ gems:
 
 whitelist:
   - jekyll-sitemap
+
+
+permalink: /:title
