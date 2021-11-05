@@ -34,3 +34,7 @@ gem "jekyll-sitemap"
 
 :jekyll_plugins
 gem "jekyll-image-optim"
+
+gem "addressable", ">= 2.8.0"
+
+gem "rexml", ">= 3.2.5"
