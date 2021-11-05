@@ -21,7 +21,7 @@ body {
     
 }
 
-.posts {
+.post {
     
     width: 600px;
     
@@ -261,7 +261,8 @@ h1#about {
     width: 240px;
     display: flex;
     flex-direction: column;
-    animation: fadeIn 3s;
+    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) forwards;
+    opacity: 0; 
     
 }
 
@@ -302,7 +303,9 @@ h1#about {
 }
 
 
-
+.social {
+    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) forwards;
+}
 
 /*Animations*/
 
@@ -313,9 +316,13 @@ section {
 }
 
 @keyframes fadeIn {
+    from {
+        transform: translateX(-8px);
+    }
+    
     to {
         opacity: 1;
-        transform: translateX(10px);
+        transform: translateX(0x);
     }
 }
 
@@ -336,9 +343,9 @@ section:nth-child(5) {
 }
 
     
-.posts {
-    animation: fadeIn 3s;
-    animation-delay: 2s;
+.post {
+    animation: fadeIn 2s;
+    animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -433,7 +440,7 @@ html {
         
     }
 
-    .posts {
+    .post {
         width: 100%
     }
 
