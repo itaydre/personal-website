@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/itaydreyfus/.rbenv/versions/3.0.0/include/ruby-3.0.0
+topdir = /usr/local/Cellar/ruby/3.0.2_1/include/ruby-3.0.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/itaydreyfus/.rbenv/versions/3.0.0/include/ruby-3.0.0/arm64-darwin20
+arch_hdrdir = /usr/local/Cellar/ruby/3.0.2_1/include/ruby-3.0.0/x86_64-darwin21
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/itaydreyfus/.rbenv/versions/3.0.0
+prefix = $(DESTDIR)/usr/local/Cellar/ruby/3.0.2_1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -30,10 +30,10 @@ sitehdrdir = $(rubyhdrdir)/site_ruby
 rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
-vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20210402-29581-ipxp8v
-sitelibdir = $(DESTDIR)./.gem.20210402-29581-ipxp8v
-sitedir = $(rubylibprefix)/site_ruby
+vendordir = $(DESTDIR)/usr/local/lib/ruby/vendor_ruby
+sitearchdir = $(DESTDIR)./.gem.20211102-56482-ieepuv
+sitelibdir = $(DESTDIR)./.gem.20211102-56482-ieepuv
+sitedir = $(DESTDIR)/usr/local/lib/ruby/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
 sitearchincludedir = $(includedir)/$(sitearch)
@@ -85,13 +85,13 @@ warnflags =
 cppflags = 
 CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) -Wno-implicit-function-declaration  $(ARCH_FLAG)
-INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi
+INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include/ffi
 DEFS     = 
-CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\" -I/Users/itaydreyfus/.rbenv/versions/3.0.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\"  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS)   $(ARCH_FLAG)
-ldflags  = -L. -L/Users/itaydreyfus/.rbenv/versions/3.0.0/lib  -fstack-protector-strong 
-dldflags = -L/Users/itaydreyfus/.rbenv/versions/3.0.0/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
-ARCH_FLAG = -m64
+ldflags  = -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib 
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib 
+ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
@@ -105,7 +105,7 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
-arch = arm64-darwin20
+arch = x86_64-darwin21
 sitearch = $(arch)
 ruby_version = 3.0.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
@@ -125,8 +125,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir)
-LIBPATH =  -L. -L$(libdir)
+libpath = . $(libdir) /usr/local/opt/libyaml/lib /usr/local/opt/openssl@1.1/lib /usr/local/opt/readline/lib
+LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -155,8 +155,8 @@ BINDIR        = $(bindir)
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
 RUBYLIBDIR    = $(sitelibdir)$(target_prefix)
 RUBYARCHDIR   = $(sitearchdir)$(target_prefix)
-HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
-ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
+HDRDIR        = $(sitehdrdir)$(target_prefix)
+ARCHHDRDIR    = $(sitearchhdrdir)$(target_prefix)
 TARGET_SO_DIR =
 TARGET_SO     = $(TARGET_SO_DIR)$(DLLIB)
 CLEANLIBS     = $(TARGET_SO) 

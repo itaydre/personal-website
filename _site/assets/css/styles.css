@@ -8,6 +8,7 @@ html, body {
 
 body {
     padding: 48px;
+    height: auto;
 }
 
 
@@ -35,6 +36,7 @@ a {
 #external-link {
     text-decoration: underline;
     font-weight: 500;
+    font-size: 14px;
 
 }
 
@@ -44,18 +46,18 @@ p {
 }
 
 text {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
 #psb {
-    font-size: 13px;
+    font-size: 14px;
     color: #747780;
     padding-right: 4px;
 }
 
 #hp-post-description {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     color: #747780;
     padding-right: 4px;
@@ -142,7 +144,7 @@ code {
 }
 
 #post-title-hp {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 40px;
     
@@ -163,12 +165,12 @@ text#post-title-hp {
 
 #go-to-hp {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 #logo-meta {
-    font-size: 13px;
+    font-size: 14px;
     color: #747780;
 }
 
@@ -210,7 +212,7 @@ h1#about {
 #sub-title {
     color: #202124;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 12px;
 
 }
@@ -267,21 +269,16 @@ h1#about {
     font-size: 8px;
 }
 
-.social {
-    font-size: 13px;
-    animation: fadeIn 3s;
-    animation-delay: 2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
 
 .social-inner {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .social-links {
-    margin-top: 8px;
-    line-height: 1.8;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
 }
 
 #sub-title {
@@ -305,25 +302,38 @@ h1#about {
 }
 
 
+
+
 /*Animations*/
 
-.intro {
-    animation: fadeIn 3s;
+section {
+    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) forwards;
+    opacity: 0;
+    
 }
 
 @keyframes fadeIn {
-    0% {opacity:0;}
-  100% {opacity:1;}
-
+    to {
+        opacity: 1;
+        transform: translateX(10px);
     }
-
-.now-then {
-    animation: fadeIn 3s;
-    animation-delay: 1s;
-    opacity: 0;
-    animation-fill-mode: forwards;
 }
 
+section:nth-child(2) {
+    animation-delay: 5s;
+}
+
+section:nth-child(3) {
+    animation-delay: 6s;
+}
+
+section:nth-child(4) {
+    animation-delay: 7s;
+}
+
+section:nth-child(5) {
+    animation-delay: 8s;
+}
 
     
 .posts {
@@ -333,6 +343,56 @@ h1#about {
     animation-fill-mode: forwards;
 }
 
+a#social {
+    margin-right: 16px;
+}
+
+.social-links {
+    margin: 0;
+}
+
+
+
+#logo-intro {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: intro 3s cubic-bezier(.35,.55,.6,.74) forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+    
+}
+
+@keyframes intro {
+
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+
+    }
+}
 
 
 
@@ -386,18 +446,6 @@ html {
 
     
 
-    a#social {
-        margin-right: 16px;
-    }
-
-    .social-links {
-        margin: 0;
-    }
 
     
-
-    img#logo {
-        height: 40px;
-        height: auto;
-        margin-right: 8px;
-    }
+    
