@@ -31,6 +31,11 @@ a {
     color: #202124;
     text-decoration: none;
     font-weight: 400;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #747780;
 }
 
 #external-link {
@@ -74,7 +79,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 8px;
     color: #202124;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -86,7 +91,7 @@ h3 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 48px;
     margin-bottom: 16px;
     font-weight: 500;
@@ -175,14 +180,14 @@ text#post-title-hp {
 }
 
 .inner-about {
-    margin: 16px 0px;
+    margin: 16px 0px 24px 0px;
     color: #202124;
 }
 
 h1#about {
     
     line-height: 1.5;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
 
 }
@@ -261,7 +266,7 @@ h1#about {
     width: 240px;
     display: flex;
     flex-direction: column;
-    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) forwards;
+    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) 1s forwards;
     opacity: 0; 
     
 }
@@ -345,7 +350,7 @@ section:nth-child(5) {
     
 .post {
     animation: fadeIn 2s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
