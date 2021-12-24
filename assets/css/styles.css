@@ -1,3 +1,12 @@
+:root {
+    --primary: #202124;
+    --secondary: #747780;
+    --spacing-24: 24px;
+    --spacing-16: 16px;
+    --spacing-8: 8px;
+    --spacing-4: 4px;
+}
+
 html, body {
     -webkit-font-smoothing: antialiased;
     margin: 0px;
@@ -9,11 +18,17 @@ html, body {
 body {
     padding: 48px;
     height: auto;
+    
 }
 
 
 .div {
     height: 100%;
+}
+
+::marker {
+    font-size: 8px;
+    color: var(--secondary);
 }
 
 .main-wrapper {
@@ -27,15 +42,58 @@ body {
     
 }
 
+.about, .now, .past, .writing {
+    margin-bottom: 24px;
+}
+
+.about, .now, .past, .writing, .socialize {
+    animation: fadeIn .6s cubic-bezier(.46,.42,.69,1.01) forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn{
+    0% {
+        transform: translateY(-4px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about {
+    animation-delay: 1s;
+}
+
+.now {
+    animation-delay: 1.4s;
+}
+
+.past {
+    animation-delay: 1.6s;
+}
+
+.writing {
+    animation-delay: 1.8s;
+}
+
+.socialize {
+    animation-delay: 2s;
+}
+
+
+
 a {
-    color: #202124;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 400;
     transition: 0.2s;
 }
 
 a:hover {
-    color: #747780;
+    color: var(--secondary);
 }
 
 #external-link {
@@ -57,14 +115,15 @@ text {
 
 #psb {
     font-size: 14px;
-    color: #747780;
+    color: var(--secondary);
     padding-right: 4px;
+    vertical-align: middle;
 }
 
 #hp-post-description {
     font-size: 14px;
     font-weight: 400;
-    color: #747780;
+    color: var(--secondary);
     padding-right: 4px;
 }
 
@@ -72,13 +131,13 @@ text {
 #date {
     font-size: 14px;
     font-weight: 500;
-    color: #747780;
+    color: var(--secondary);
 }
 
 h1 {
     margin-top: 0;
     margin-bottom: 8px;
-    color: #202124;
+    color: var(--primary);
     font-size: 32px;
     font-weight: 500;
 }
@@ -87,7 +146,7 @@ h3 {
     margin: 0;
     font-weight: 500;
     font-size: 16px;
-    color: #747780;
+    color: var(--secondary);
 }
 
 h2 {
@@ -95,7 +154,7 @@ h2 {
     margin-top: 48px;
     margin-bottom: 16px;
     font-weight: 500;
-    color: #202124;
+    color: var(--primary);
 }
 
 code {
@@ -107,26 +166,23 @@ code {
 }
 
 ul {
-    color:#202124;
+    color: var(--primary);
     padding-left: 16px;
     margin-block-start: 4px;
     margin-top: 0px;
+    margin-bottom: 0;
 }
 
 li {
     margin-bottom: 4px;
 }
 
-#post-hp {
-    margin-bottom: 16px;
-}
 
-.header-hp {
-    margin-bottom: 8px;
-}
+
+
 
 #tag {
-    color:#747780;
+    color:var(--secondary);
     font-size: 14px;
     margin-left: 8px;
 }
@@ -139,7 +195,7 @@ code {
     padding: 2px 4px;
     background-color: #EDEEEF;
     border-radius: 4px;
-    color:#747780;
+    color:var(--secondary);
     font-size: 12px;
 }
 
@@ -172,16 +228,18 @@ text#post-title-hp {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
+    margin-bottom: var(--spacing-4);
 }
 
 #logo-meta {
     font-size: 14px;
-    color: #747780;
+    color: var(--secondary);
+    margin-bottom: var(--spacing-8);
 }
 
 .inner-about {
-    margin: 16px 0px 24px 0px;
-    color: #202124;
+    color: var(--primary);
+    margin-top: var(--spacing-8);
 }
 
 h1#about {
@@ -202,7 +260,7 @@ h1#about {
 }
 
 #wfh {
-    color:#747780
+    color:var(--secondary)
 }
 
 
@@ -215,10 +273,10 @@ h1#about {
 }
 
 #sub-title {
-    color: #202124;
+    color: var(--primary);
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 12px;
+    
 
 }
 
@@ -228,29 +286,12 @@ h1#about {
     margin: 0;
 }
 
-#role {
-    margin: 4px 0;
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.7;
-}
 
-#country {
-    font-size: 14px;
-    margin: 0;
-    font-weight: 400;
-    opacity: 0.4;
-}
-
-#about {
-    font-size: 18px;
-    font-weight: 400;
-}
 
 #p {
     font-size: 16px;
     font-weight: 400;
-    color: #747780;
+    color: var(--secondary);
     margin: 8px 0;
     line-height: 1.8;
 }
@@ -266,15 +307,17 @@ h1#about {
     width: 240px;
     display: flex;
     flex-direction: column;
-    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) 1s forwards;
-    opacity: 0; 
-    
 }
 
 ::marker {
-    font-size: 8px;
+    
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 .social-inner {
     font-size: 14px;
@@ -289,14 +332,14 @@ h1#about {
 
 #sub-title {
     font-weight: 500;
-    color: #202124;
+    color: var(--primary);
     margin-bottom: 8px;
     display: inline-block;
 }
 
 #socialize {
     font-weight: 600;
-    color: #202124;
+    color: var(--primary);
     margin-bottom: 12px;
 }
 
@@ -307,104 +350,24 @@ h1#about {
     height: auto;
 }
 
+.about-inner {
+    margin-bottom: 24px;
+}    
 
-.social {
-    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) forwards;
-}
-
-/*Animations*/
-
-section {
-    animation: fadeIn 1s cubic-bezier(.09,.3,.35,1.04) forwards;
-    opacity: 0;
-    
-}
-
-@keyframes fadeIn {
-    from {
-        transform: translateX(-8px);
-    }
-    
-    to {
-        opacity: 1;
-        transform: translateX(0x);
-    }
-}
-
-section:nth-child(2) {
-    animation-delay: 5s;
-}
-
-section:nth-child(3) {
-    animation-delay: 6s;
-}
-
-section:nth-child(4) {
-    animation-delay: 7s;
-}
-
-section:nth-child(5) {
-    animation-delay: 8s;
-}
-
-    
-.post {
-    animation: fadeIn 2s;
-    animation-delay: 2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
 
 a#social {
     margin-right: 16px;
 }
 
-.social-links {
-    margin: 0;
-}
 
-
-
-#logo-intro {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    animation: intro 3s cubic-bezier(.35,.55,.6,.74) forwards;
-    animation-delay: 1s;
-    opacity: 0;
-
+section {
+    
+    
     
 }
 
-@keyframes intro {
 
-    0% {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
 
-    20% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    90% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(50px);
-        opacity: 0;
-
-    }
-}
 
 
 
@@ -431,7 +394,8 @@ html {
         margin-left: 0;
         margin-bottom: 24px;
         width: 100%;;
-        margin: auto;
+        margin-top: 0;
+        
         
     }
 
