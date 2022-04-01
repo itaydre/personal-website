@@ -30,59 +30,66 @@
 <body>
     <!--<img id="logo-intro" src="assets/images/logo.png">!-->
 
-
-       <div class="about">
-            <a href="/" id="go-to-hp">
-                <img id="logo" src="assets/images/logo.png"><br>
-                <text id="go-to-hp">Itay Dreyfus</text><br>
-            </a>
-                <text id="logo-meta">Designer</text><br>
-                <text id="logo-meta">Tel Aviv, Israel</text>
-            <div class="inner-about">
-                <text>I'm helping startups to explore ideas, build and launch meaningful products.</text>
+    
+        <div class="intro">
+        <div class="about">
+                    <img id="logo" src="assets/images/logo.png">
+                    <div class="about-text">
+                        <text id="go-to-hp">Itay Dreyfus</text>
+                        <text id="logo-meta">Designer</text>
+                        <text id="logo-meta">Tel Aviv, Israel</text>
+                    </div>
+            </div>
+            <div class="now">
+                <text id="sub-title">/now</text>
+                <ul class="hp-bullets">
+                    <li><text id="psb">Rethinking wealth at <a id="external-link" href="http://vyzer.co/" target="_blank">Vyzer</a>.</text></li>
+                </ul>
+            </div>
+            <div class="past">
+                <text id="sub-title">/past</text>
+                <ul class="hp-bullets">
+                    <li><text id="psb">Led design and explored crypto at <a id="external-link" href="https://www.bancor.network/" target="_blank">Bancor</a>.</text></li>
+                    <li><text id="psb">Attempted to launch a few startups.<br>Gone through a few mazes.</text></li>
+                </ul>
+            </div>
+            <div class="socialize">
+                <text id='sub-title'>/socialize</text>
+                <div class="social-links">
+                    <ul class="hp-bullets">
+                        <li><a id="external-link" href="https://twitter.com/itaydre" target="_blank">Twitter</a></li>
+                        <li><a id="external-link" href="https://www.are.na/itay-dreyfus" target="_blank">Are.na</a></li>
+                        <li><a id="external-link" href="https://futureland.tv/itay" target="_blank">Futureland</a></li>
+                        <li><a id="external-link" href="https://www.linkedin.com/in/itay-dreyfus-64049316" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     
-        <div class="now">
-            <text id="sub-title">/now</text>
-            <ul>
-                <li><text id="psb">Rethinking wealth management at <a id="external-link" href="http://vyzer.co/" target="_blank">Vyzer</a>.</text></li>
-                <li><text id="psb">Occasionally working with early-stage startups.</text></li>
-            </ul>
-        </div>
-        
-        <div class="past">
-            <text id="sub-title">/past</text>
-            <ul>
-                <li><text id="psb">Led design and explored crypto at <a id="external-link" href="https://www.bancor.network/" target="_blank">Bancor</a>.</text></li>
-                <li><text id="psb">Attempted to launch a few startups. Gone through a few mazes.</text></li>
-            </ul>
-        </div>
 
-       <!--<div class="writing">
-            <text id='sub-title'>/writing</text>
-            {% for post in site.posts %}
-            <div id="post-hp">
-                <div class="header-hp">
-                    <a href="{{ post.url }}">
-                        <text id="post-title-hp">{{post.title}}</a></text><br>
-                        <text id="hp-post-description">{{post.description}}</text><br>
-                    </a>
+    <!--<div class="v-line"></div>!-->
+
+
+    <div class="log">
+        <!--<text id='sub-title'>/log</text>!-->
+        {% for post in site.posts %}
+        <div id="post-hp">
+            <div class="hp-title-desc">
+                <a id="post-title-hp" href="{{ post.url }}">
+                <text id="post-title-hp">{{post.title}}</a></text>
+                <text id="hp-post-description">{{post.description}}</text>
+                <text>{{ post.excerpt }}</text>
+                
+            </div>
+                <!--<div class="hp-date-tag">
+                    <text id="date">{{ "today" | date: "%B %d, %Y" }}</text> <text id="psb">/essay</text>
                 </div>
-            </div>
-              {% endfor %}
-        </div>!-->
+                </a>
+            </div>!-->
+          {% endfor %}
+    </div>
 
-        <div class="socialize">
-            <text id='sub-title'>/socialize</text>
-            <div class="social-links">
-                <a id="external-link" href="https://twitter.com/itaydre" target="_blank">Twitter</a>
-                <a id="external-link" href="https://www.are.na/itay-dreyfus" target="_blank">Are.na</a>
-                <a id="external-link" href="https://futureland.tv/itay" target="_blank">Futureland</a>
-                <a id="external-link" href="https://www.linkedin.com/in/itay-dreyfus-64049316" target="_blank">Linkedin</a>
-            </div>
-        </div>
-        
+   
 
 </body>
 </html>
