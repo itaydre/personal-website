@@ -1,7 +1,6 @@
 :root {
     --primary: #202124;
     --secondary: #747780;
-
     --spacing-24: 24px;
     --spacing-16: 16px;
     --spacing-8: 8px;
@@ -12,7 +11,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     margin: 0px;
     height: 100%;
-    background: white;
+    background: #F6F7FA;
  
 }
 
@@ -32,16 +31,41 @@ html, body {
 
 .intro  {
     display: flex;
+    gap: 32px;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    padding-right: 40px;
+    /*border-right: 1px solid #EAECF3;*/
+    margin: 40px;
+    padding: 40px;
+    background-color: white;
+    transition: box-shadow .5s cubic-bezier(.17,.67,.83,.67);
+    
+}
+
+.intro:hover {
+    box-shadow: 0px 34px 44px -18px rgba(32, 33, 36, 0.1);
+    
+}
+    
+.intro-inner  {
+    display: flex;
     gap: 24px;
     flex-direction: column;
     height: 100%;
     width: fit-content;
     padding-right: 40px;
-    border-right: 1px solid #EAECF3;
+    
     position: fixed;
     padding: 40px;
+    width: 200px;
 }
-    
+
+#logo-inner {
+    background-color: inherit;
+    padding: 0;
+}
     
     
 
@@ -49,24 +73,28 @@ html, body {
 .about-text {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
     margin-top: 16px;
 }
 
 #go-to-hp {
     font-weight: 500;
     color: var(--primary);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #logo-meta {
     color: var(--secondary);
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 #logo {
-    width: 148px;
+    width: 96px;
+}
+
+#logo-post {
+    width: 80px;
 }
 
 #sub-title {
@@ -74,7 +102,10 @@ html, body {
     font-weight: 500;
     line-height: 16px;
     
-    
+}
+
+#post-desc {
+    margin-bottom: 8px;
 }
 
 #psb {
@@ -105,16 +136,33 @@ li::marker {
 }
 
 li{
-    line-height: 1;
+    line-height: 1.5;
+    font-size: 15px;
+}
 
+li#li-hp {
+    line-height: 1;
     
 }
 
+a {
+    text-decoration: underline;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
 a#external-link {
-    text-decoration: none;
+    
     color: var(--primary);
     font-weight: 500;
     font-size: 14px;
+    background-color: transparent;
 }
 
 a#external-link:hover {
@@ -124,11 +172,11 @@ a#external-link:hover {
 .past, .now, .socialize {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 #psb {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .social-links {
@@ -140,14 +188,21 @@ a#external-link:hover {
 /*log*/
 
 .log {
-    margin-left: 500px;
-    padding-top: 40px;
-    padding-right: 20%;
-    visibility: hidden;
-       
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
 }
 
 /*posts*/
+
+
+
+.post-header{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
 
 
@@ -158,20 +213,136 @@ a#external-link:hover {
 }
 
 #post-title-hp {
-    text-decoration: none;
+    
     color: var(--primary);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
+    background-color: inherit;
+    padding: 0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#sub-title-log {
+    margin-bottom: 16px;
+}
+
+#post-title-hp:hover {
+    color: var(--secondary);
 }
 
 #hp-post-description {
     font-size: 14px;
     color: var(--secondary);
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
+
+/*post-page*/
+
+.post {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: inherit;
+    margin-left: 300px;
+}
     
-    @media only screen and (max-width: 400px) {
 
-       
 
+/*headings*/
+
+h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.022em;
+    
+}
+
+h1, h2 {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.019em;
+    font-size: 25px;
+}
+
+h3 {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: -0.011em;
+}
+
+
+p {
+    line-height: 1.5;
+    color: var(--primary);
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    
+}
+
+text {
+    letter-spacing: -0.006em;
+}
+
+
+blockquote {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 16px;
+    font-weight: 500;
+    
+ 
+}
+
+blockquote p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    
+}
+
+
+
+blockquote:nth-child(n) {
+    margin: 0;
+}
+
+.date-tag {
+    margin-top: 16px;
+}
+
+#tag {
+    font-size: 13px;
+    color: var(--secondary);
+    font-weight: 500;
+    
+}
+
+#date-time {
+    font-size: 12px;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.post-footer {
+    margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 667px) {
+    .intro {
+        margin: 16px;
     }
+}

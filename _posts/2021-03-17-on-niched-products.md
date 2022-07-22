@@ -10,11 +10,11 @@ I've come to realize that the most inspiring, innovative, and authentic design o
 
 Over the years, I used to mainly observe the big corps of our days as role models. Whether I had to design a simple UI element, a website or perhaps I just needed an inspiration boost – I've always ended up going back to the same old and familiar places.
 
-Popular products of giants we all know (FAANG?) are not only dominating the entire web. They stand as a dogma in the field of product design, and have largely swept the community after the same aesthetics and trends probably since forever.
+Popular products of giants we all know are not only dominating the entire web. They stand as a dogma in the field of product design, and have largely swept the community after the same aesthetics and trends probably since forever.
 
-As a designer, I've always wanted to be different. I guess it's a self nature to be original at what you craft, but actually, I've been following the herd for quite some time myself.
+As a designer, I've always wanted to be different. I guess it's a self nature to be original at what you craft, but to be honest, I've been following the herd for quite some time myself.
 
-Recently, I've started to witness more and more products that lean into a different design direction, which I like to think of it as 'niched product design'. These products are usually:
+Recently, I've started to witness more and more products that lean into a different design direction, which I like to think of as 'niche product design'. These products are usually:
 
 - Opinionated by design
 - Being developed by individuals or a small team
@@ -28,16 +28,15 @@ I've already [shared some thoughts](https://twitter.com/itaydre/status/129069484
 The tremendous acceleration of technology over the past decade have shaped the product design discipline, and not only by creating new role titles. This once small community has rapidly turned into an integral part of the entire tech scene. The awareness for the importance of design has increased, the demand for designers is ever-growing, and generally, design has become popular among other more traditional fields.
 
 However, once a culture becomes mature enough, it starts to develop its own bad habits.
-As Andy Allen wrote: 
 
 > "The world of apps – once an exciting canvas for creative exploration – has become repetitive, predictable and… boring."\
 > [No more boring apps](https://vanschneider.com/blog/no-more-boring-apps/)
 
-Although [similar voices](https://www.intercom.com/blog/the-dribbblisation-of-design/) have started to appear a few years ago, the truth is that not much have changed since then.
+Although [similar voices](https://www.intercom.com/blog/the-dribbblisation-of-design/) have started to appear a few years ago, the truth is that not much has changed since then.
 
-Designers are still chasing after the [same trends](https://twitter.com/ow/status/1280251460232581123?s=20) and even portfolios became [predictable](https://twitter.com/tsantsai/status/1430945840785461249?s=20).
+Designers are still chasing after the [same trends](https://twitter.com/ow/status/1280251460232581123?s=20) and even portfolios became [too predictable](https://twitter.com/tsantsai/status/1430945840785461249?s=20).
 
-I guess that this nature of standardization is inevitable not only in our field, but it led me to believe that something must change. As a start, I think that avoiding the same patterns that have led us to this point is essential.
+I guess that this nature of standardization is inevitable not only in our field, but it led me to believe that something have to change. As a start, I think that avoiding the same patterns that have led us to this point is essential.
 
 As written by [Pavel Kedich](https://2019.kedzich.com/) :
 
@@ -45,24 +44,26 @@ As written by [Pavel Kedich](https://2019.kedzich.com/) :
 
 I strongly believe that designers should take more unconventional and creative approaches.
 
-To me, going back to the roots means exploring the surface again. **<<past examples - archive twitter page>>**
+To me, going back to the roots means exploring the surface again.
+
+
+[https://twitter.com/itaydre/status/1519963151483252736](https://twitter.com/uiarchive)
+[https://twitter.com/uiarchive](https://twitter.com/uiarchive)
 
 
 ## On characteristic
 
 Despite the phenomena I've just described is ever growing, I've started to notice some new seeds that have being planted. Perhaps it's just my own perspective on the startup world that has substantially shifted, but looking at startups in a more humble and realistically eyes have gotten me to discover the calmer world in tech: bootstrapped startups and indie products.
 
-I've noticed that businesses that pursue authenticity instead of growth at all costs are naturally more in a position that enables a rare type of freedom. It's a freedom that lets, or even enforces niche products makers to run away from all corny design trends and patterns.
+It seems like businesses that pursue authenticity instead of growth at all costs are naturally more in a position that enables a rare type of freedom. It's a freedom that lets, or even enforces niche products makers to run away from all corny design trends and patterns.
 
-It would be a shame for me to claim that other large startups or corporates don't invest or aspire for exceptional design, but when every decision is also a financial one, it's harder to take risks.
+It would be a shame for me to claim that established startups and corporates don't invest or aspire for exceptional design, but when every decision is also a financial one, it's harder to take risks.
 
 When product makers embrace the so-called indie mentality, they're removing themselves out from the equation. They're suddenly out of the maniac race of competition, growth, and all of the other startup deep troubles we all know.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">if ur still thinking in terms of feature comparisons, ur locked in the competition mindset... we playing a different game than the others</p>&mdash; Rainbow (@rainbowdotme) <a href="https://twitter.com/rainbowdotme/status/1437867222685388806?ref_src=twsrc%5Etfw">September 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-These conditions unlock new opportunities for designers to break through familiar conventions while establishing new ones — all but not following the current status quo.
-
-
+These conditions unlock new opportunities for designers to break through familiar conventions while establishing new ones — all but not following the status quo.
 
 ## Growth pains
 
@@ -76,40 +77,37 @@ In my view, this is the reality of product design today.
 
 As companies grow, they gradually move from a state of 'fan-only' to a state of a product for everyone. During this transition, the identity of a product tends to change accordingly. The will to satisfy everyone eventually harms the core of the product that has been built in the first place, and then the magic slowly fades away.
 
---- As an addition reference, I recommend this [podcast episode](https://museapp.com/podcast/24-small-giants/) where this model is being discussed in a detail.
+I highly recommend diving into these references:
 
-> A “small giant” is a company that chooses to optimize for mojo instead of growth
+- [A Note on Smallness](https://verygoods.co/smallness) - We lost our soul and growth was slow and I failed to raise a Series A investment round and Ebay.
+- [Small Giants](https://museapp.com/podcast/24-small-giants/) - A “small giant” is a company that chooses to optimize for mojo instead of growth
 
 ## The desire to change
 
 It takes time to a culture to mature.
 
-It took years of grinding, hustling and experiments to get to where we are today, but I think it's time to rethink how we want to march our community.
+It took years of grinding, hustling and experiments to get to where we are today, and I think it's time to rethink how we want to march our community. 
 
-I wish more designers and product makers would take another approach, as [Chuánqí Sun](https://chuanqisun.com/) puts it:
+I wish more designers and product makers would take, embrace and develop new ways to craft. As [Chuánqí Sun](https://chuanqisun.com/) puts it:
 
-> "To myself, to other designers, to our discipline, to this young and ever-shifting industry, in defiance to standardization of the design process, in defense of design as a humanly art and craft, I urge you to design with courage, as a human, with idiosyncrasies. It is also your responsibility to educate and influence people around you. Tell them, or even better, show them the difference between a good design and a great one."
+> "To myself, to other designers, to our discipline, to this young and ever-shifting industry, in defiance to standardization of the design process, in defense of design as a humanly art and craft, I urge you to design with courage, as a human, with idiosyncrasies. It is also your responsibility to educate and influence people around you. Tell them, or even better, show them the difference between a good design and a great one."<br>
 > [The vanishing designer](https://uxdesign.cc/the-vanishing-designer-6d3d999f9540)
 
-There could be endless ways we can implement such attitude. From the principles to practices to aesthetics – they're all come together at the end.
+There could be endless ways we can implement such attitude. From principles to practices to aesthetics – it's all come together at the end.
 
-
-
-
-As the building in public model 
-
-One thing that I also noticed that characterizes niched products is the model of building in public. Many of them are being super transparent on their product development and practices.
+One model that I also noticed characterizes niche products is the model of building in public. Makers being super transparent about the way the build:
 
 - Futureland used to host [live design Fridays](https://futureland.tv/pirijan/futureland-design) where [Pirijan](https://twitter.com/pketh) of [Kinopio](https://kinopio.club/) was sharing his designs for a few hours and get feedback.
 
-- Jonnie Hallman, the maker of Cushion is also writing a [comprehensive blog](https://cushionapp.com/blog) where he details about the behind the scenes 
+- Jonnie Hallman, the maker of Cushion is writing a [comprehensive blog](https://cushionapp.com/blog) where he details all about the behind his scenes.
 
+- Alan, the maker of Good News has opened sourced with this [Figma file](https://www.figma.com/file/K0tkNl1y8M9DzHCZn3BcoH/%F0%9F%92%9C-Good-News?node-id=3%3A705).
 
 ## Where to look
 
-Luckily, the web is still a magnificent place for exploring and discovering new stuff. Here is a list of my favorite niched-products:
+Luckily, the web is still a magnificent place for exploring and discovering new stuff. Here is a list of my favorite niche-products:
 
-- [Are.na](are.na) - A tool for collecting and organizing bookmarks
+- [Are.na](are.na) - A tool for visually collecting and organizing bookmarks
 - [Notion](notion.so) - A tool for creating databases on steroids
 - [Muse](https://museapp.com/) - A visual thinking tool in the form of an iPad app
 - [Futureland](Futureland.tv) - A tool/social network for documenting and sharing personal/collective journals
@@ -119,8 +117,15 @@ Luckily, the web is still a magnificent place for exploring and discovering new 
 - [Rainbow](https://rainbow.me/) - A mobile Etheruem wallet
 - [Honk](https://honk.me/) - A new take on real-time messaging
 - [Cushion](https://cushionapp.com/) - A project management tool for freelancers
-- hi.goodnews
+- [Good News](https://news.hifolks.com/) - The new DesignerNews, built by the same maker
 
 I'm curious to hear what's your niche!
 
-Feel free to reach out on [Twitter](twitter.com/itaydre) or [drop me a line](itaydr@gmail.com).
+Further references\
+↳
+- [A Note on Smallness](https://verygoods.co/about) by Ben Pieratt
+- [Other web](https://2019.kedzich.com/)
+- [The vanishing designer](https://uxdesign.cc/the-vanishing-designer-6d3d999f9540)
+- [No more boring apps](https://vanschneider.com/blog/no-more-boring-apps/)
+- [The dribbblisation of design](https://www.intercom.com/blog/the-dribbblisation-of-design/)
+- [Redesigning an App, One Day a Week at a Time](https://pketh.org/redesigning-an-app.html)

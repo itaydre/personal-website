@@ -37,11 +37,28 @@ html, body {
     height: 100%;
     width: fit-content;
     padding-right: 40px;
-    border-right: 1px solid #EAECF3;
+    /*border-right: 1px solid #EAECF3;*/
     position: fixed;
     padding: 40px;
 }
     
+.intro-inner  {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    padding-right: 40px;
+    
+    position: fixed;
+    padding: 40px;
+    width: 200px;
+}
+
+#logo-inner {
+    background-color: inherit;
+    padding: 0;
+}
     
     
 
@@ -61,12 +78,16 @@ html, body {
 
 #logo-meta {
     color: var(--secondary);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
 #logo {
-    width: 148px;
+    width: 130px;
+}
+
+#logo-post {
+    width: 80px;
 }
 
 #sub-title {
@@ -74,7 +95,10 @@ html, body {
     font-weight: 500;
     line-height: 16px;
     
-    
+}
+
+#post-desc {
+    margin-bottom: 8px;
 }
 
 #psb {
@@ -105,9 +129,25 @@ li::marker {
 }
 
 li{
-    line-height: 1;
+    line-height: 1.5;
+    font-size: 14px;
+}
 
+li#li-hp {
+    line-height: 1;
     
+}
+
+a {
+    text-decoration: underline;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 14px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+a:hover {
+    color: var(--secondary);
 }
 
 a#external-link {
@@ -115,6 +155,7 @@ a#external-link {
     color: var(--primary);
     font-weight: 500;
     font-size: 14px;
+    background-color: transparent;
 }
 
 a#external-link:hover {
@@ -124,11 +165,11 @@ a#external-link:hover {
 .past, .now, .socialize {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 #psb {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .social-links {
@@ -140,14 +181,27 @@ a#external-link:hover {
 /*log*/
 
 .log {
-    margin-left: 500px;
+    margin-left: 375px;
     padding-top: 40px;
     padding-right: 20%;
-    visibility: hidden;
+    display: flex;
+    flex-direction: column;
        
 }
 
 /*posts*/
+
+#post-hp {
+    margin-top: 24px;
+    
+}
+
+.post-header{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
 
 
@@ -161,17 +215,149 @@ a#external-link:hover {
     text-decoration: none;
     color: var(--primary);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
+    background-color: inherit;
+    padding: 0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#sub-title-log {
+    margin-bottom: 16px;
+}
+
+#post-title-hp:hover {
+    color: var(--secondary);
 }
 
 #hp-post-description {
     font-size: 14px;
     color: var(--secondary);
+    margin-bottom: 8px;
 }
 
-    
-    @media only screen and (max-width: 400px) {
 
-       
+/*post-page*/
+
+.post {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: inherit;
+}
+    
+
+
+/*headings*/
+
+h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.022em;
+    
+}
+
+h1, h2 {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.019em;
+    font-size: 18px;
+}
+
+h3 {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: -0.011em;
+}
+
+
+p {
+    line-height: 1.5;
+    color: var(--primary);
+    font-size: 15px;
+    letter-spacing: -0.006em;
+}
+
+text {
+    letter-spacing: -0.006em;
+}
+
+
+blockquote {
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 16px;
+    font-weight: 500;
+ 
+}
+
+blockquote p {
+    margin: 0;
+    font-size: 14px;
+    
+}
+
+blockquote:nth-child(n) {
+    margin: 0;
+}
+
+.date-tag {
+    margin-top: 16px;
+}
+
+#date-time {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+.post-footer {
+    margin-top: 40px;
+}
+
+    @media only screen and (max-width: 950px) {
+
+        body {
+            width: 100%;
+        }
+        
+        .intro {
+            position: relative;
+            height: fit-content;
+            padding: 24px 24px 12px 24px;
+            width: 100%;
+        }
+
+        .intro-inner {
+            position: relative;
+        }
+        
+        .log {
+            position: relative;
+            margin: 0;
+            padding: 12px 24px 24px 24px;
+        }
+
+        img#logo {
+            width: 100px;
+        }
+
+        .intro-inner {
+            width: 100%;
+            width: 100%;
+            height: fit-content;
+            padding: 24px 24px 12px 24px;
+        }
+
+        .post {
+            padding: 24px 24px 12px 24px;
+        }
 
     }
