@@ -14,3 +14,7 @@ whitelist:
 
 
 permalink: /:title
+
+collection:
+  - essay
+  - work

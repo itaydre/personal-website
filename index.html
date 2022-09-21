@@ -8,6 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The digital space of Itay Dreyfus</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="https://use.typekit.net/qoy2cjt.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         @import url('https://rsms.me/inter/inter.css');
@@ -29,73 +31,40 @@
 
 </head>
 <body>
-    <!--<img id="logo-intro" src="assets/images/logo.png">!-->
-    
-<!-- bogo -->
-    
-        <div class="intro">
-        <div class="about">
-                    <img id="logo" src="assets/images/pic-new-profile.png">
-                    <div class="about-text">
-                        <text id="go-to-hp">Itay Dreyfus</text>
-                        <text id="logo-meta">Designer</text>
-                        <text id="logo-meta">Tel Aviv, Israel</text>
-                    </div>
-            </div>
-            <div class="now">
-                <text id="sub-title">/now</text>
-                <ul class="hp-bullets">
-                    <li id="li-hp"><text id="psb">Rethinking wealth management at <a id="external-link" href="http://vyzer.co/" target="_blank">Vyzer</a>.</text></li>
-                </ul>
-            </div>
-            <div class="past">
-                <text id="sub-title">/past</text>
-                <ul class="hp-bullets">
-                    <li id="li-hp"><text id="psb">Led design and explored crypto at <a id="external-link" href="https://www.bancor.network/" target="_blank">Bancor</a>.</text></li>
-                    <li id="li-hp"><text id="psb">Attempted to launch a few startups. Gone through a few mazes.</text></li>
-                </ul>
-            </div>
-            <div class="socialize">
-                <text id='sub-title'>/socialize</text>
-                <div class="social-links">
-                    <ul class="hp-bullets">
-                        <li id="li-hp"><a id="external-link" href="mailto:itaydr@gmail.com" target="_blank">Email</a></li>
-                        <li id="li-hp"><a id="external-link" href="https://twitter.com/itaydre" target="_blank">Twitter</a></li>
-                        <li id="li-hp"><a id="external-link" href="https://www.are.na/itay-dreyfus" target="_blank">Are.na</a></li>
-                        <li id="li-hp"><a id="external-link" href="https://futureland.tv/itay" target="_blank">Futureland</a></li>
-                        <li id="li-hp"><a id="external-link" href="https://www.linkedin.com/in/itay-dreyfus-64049316" target="_blank">Linkedin</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <div class="log">
-                <text id='sub-title'>/writing</text>
-                {% for post in site.posts %}
-                <div id="post-hp">
-                    <div class="hp-title-desc">
-                        <a id="post-title-hp" href="{{ post.url }}">
-                            <text id="post-title-hp">{{post.title}}</a></text>
-                            <text id="hp-post-description">{{post.description}}</text>
+    {% include intro.html %}
+<div class="main">        
+    <div class="log-and-image">
+                    <div class="log">
+                    <text id='sub-title'>/log</text>
+                    <div class="posts">
+                    {% for post in site.posts %}
+                    <div id="post-hp">
+                        <div class="hp-title-desc">
+                                <a id="post-title-hp" href="{{ post.url }}">
+                                <text id="post-title-hp">{{post.title}}</text></a>
+                                <div class="post-desc">
+                                    <text id="tag">{{ post.tags }}</text>
+                                    <text id="date-time">{{ post.date | date: "%B %d, %Y" }}</text>
+                                </div>        
                         </div>
-                            <div class="post-date-tag">
-                                <text id="date-time">{{ "today" | date: "%B %d, %Y" }}</text>•<text id="date-time">Essay</text>
+                    </div>
+                        {% endfor %}
+                        <div class="external-blog">
+                            <a id="post-title-hp" href="https://uxplanet.org/my-current-figma-vs-sketch-179c90e03c8d" target="_blank">How we used a Design Sprint to empower team collaboration and move faster &#8599;</a>
+                            <br><text id="date-time">January 28, 2020</text>
+                        </div>
+                            <div class="external-blog">
+                                <a id="post-title-hp" href="https://uxplanet.org/my-current-figma-vs-sketch-179c90e03c8d" target="_blank">My current Figma vs. Sketch &#8599;</a>
+                                <br><text id="date-time">September 18, 2019</text>
                             </div>
                     </div>
-                        
-                        
-                    </div>
-                        </a>
-                    </div>
-                  {% endfor %}
-            </div> -->
+                </div>
+
+        <div class="workspace">
+            <img id="workspace-img" src="assets/images/workspace.jpg">
+            <text id="psb">WFH setup, September 2021</text>
         </div>
-    
-
-    <!--<div class="v-line"></div>!-->
-
-
-    
-
-   
-
+    </div>
+</div>
 </body>
 </html>
