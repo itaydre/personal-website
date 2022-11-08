@@ -1,0 +1,32 @@
+<section class="posts-feed">
+    <text id="sub-title">/log</text>
+    <ul class="posts-list">
+    {%- for post in collections.post -%}
+    <li class="posts-hp">
+    <div class="hp-title-desc">
+            <a id="post-title-hp" href=" {{ post.url }}">
+                <div class="post-hp-text">
+                    <text> {{ post.data.title }}</text>
+                </a>
+                <text id="intro-text"> {{ post.data.description }}</text>
+            </div>
+            <div class="tag-wrapper">
+                <text id="tag"> {{ post.data.tag }}</text>
+            </div>
+            <a id="post-title-hp" href=" {{ post.url }}">
+                {% if post.data.image %}
+                <img class="img-feed-hp" src="{{ post.data.image }}" alt="{{ post.data.title }}" class="img-feed-hp">
+                {% endif %}
+            </a>
+        </div>
+    </li>
+    <hr class="post-divider">
+    
+    {%- endfor %}
+</ul>
+
+    
+    
+</section>
+
+
