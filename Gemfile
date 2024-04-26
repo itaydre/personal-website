@@ -37,3 +37,4 @@ gem "webrick"
 gem 'jekyll-sitemap'
 
 :jekyll_plugins
+gem 'jekyll-postcss'

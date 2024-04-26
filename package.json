@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "cssnano": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}
