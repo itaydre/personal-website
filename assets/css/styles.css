@@ -20,3 +20,7 @@ a {
   color: blue;
   font-style: italic;
 }
+
+li::marker {
+  font-size: 10px;
+}

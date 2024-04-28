@@ -4,5 +4,8 @@
     "cssnano": "latest",
     "postcss": "latest",
     "tailwindcss": "latest"
+  },
+  "scripts": {
+    "build": "mkdir -p _site && npm run build"
   }
 }
