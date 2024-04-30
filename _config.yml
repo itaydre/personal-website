@@ -21,3 +21,6 @@ permalink: /:title
 collection:
   - essay
   - work
+
+url: 'https://itaydreyfus.com'
+baseurl: ''
