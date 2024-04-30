@@ -24,3 +24,5 @@ collection:
 
 url: 'https://itaydreyfus.com'
 baseurl: ''
+
+include: ["node_modules/tailwindcss"]
